@@ -1,12 +1,21 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{caption}
+\usepackage{xcolor}
 
 \title{
-\textbf{\begin{center}\Huge Cahier des charges \end{center}}
-\textrm{ \underline{Groupe} : Sépanou}}
-\author{LO Jean-Pierre | MICHALON Loïc\and MICHOT Maxence | TCHEKACHEV David}
+    \textbf{ \begin{center} \Huge Cahier des charges \end{center} }
+    \textrm{ \underline{Groupe:} Sépanou }
+}
+\author{
+    LO Jean-Pierre | MICHALON Loïc \and
+    MICHOT Maxence | TCHEKACHEV David
+}
 \date{Janvier 2021}
+
+\definecolor{dark_grey}{RGB}{24, 26, 27}
+\pagecolor{dark_grey}
+\color{white}
 
 \begin{document}
 
@@ -18,46 +27,68 @@
 \large \tableofcontents
 
 \pagebreak
-
+\normalsize
 \section{Introduction}
-%\lipsum[7-9]
+
+...
 
 \pagebreak
 
 \section{Le groupe et ses membres}
+
 \subsection{Le groupe}
-%\lipsum[4-5]
+
+...
 
 \subsection{Les membres}
+
 \subsubsection{LO Jean-Pierre}
-%\lipsum[3]
+
+...
 
 \subsubsection{MICHALON Loïc}
 
-J'ai toujours aimé l'informatique
+J'ai toujours aimé l'informatique. En effet, cela m'intéresse depuis que je suis tout petit notamment depuis la primaire. Cependant j'ai commencé à toucher au code en Seconde avec le Javascript mais n'ayant aucun projet à réaliser j'ai vite arrêté mais cela resta très formateur. J'ai donc surtout codé sur CASIO durant la Seconde et la Première, le temps me manquant en Terminale. Ainsi rentrer à l'EPITA m'a permis de me mettre pour de bon à l'informatique pour mon plus grand bonheur.\\
+J'aime jouer aux jeux vidéos durant mon temps libre surtout aux jeux de stratégie ou aux jeux avec une grande rejouabilité tel que les rogue-like. En dehors des jeux vidéos j'aime bien m'instruire sur le monde extérieur en Histoire comme en géopolitique et j'affectionne tout particulièrement les sciences "dures".\\
+Ce projet va me permettre d'avoir au moins fait un jeu dans ma vie. De plus, ce jeu fait parti d'un genre (rogue-like) que j'apprécie fortement et ce projet va donc me permettre de découvrir les coulisses de la programmation en équipe ce qui me semble très intéressant et formateur. Je regarde donc avec intérêt la suite de ce projet en espérant pouvoir le mener à bien lors du S2.
 
 \subsubsection{MICHOT Maxence}
-%\lipsum[3]
+
+Passionné de programmation depuis la fin du collège, j'ai commencé avec des langages bas niveaux comme le C, le C++ ou encore le TI Basic. J'aime apprendre de nouveaux langages.
+
 \subsubsection{TCHEKACHEV David}
-%\lipsum[2]
+
+...
+
 \pagebreak
 
 \section{Le projet}
+
 \subsection{Origine et nature du projet}
+
 D’où vient l’idée de ce projet, de quelle nature est il ? Jeu, Uti-litaire, Traitement d’images, etc...
+
 \subsubsection{Idée initiale}
+
+...
+
 \subsubsection{Nature du jeu}
 
+...
+
 \subsection{Objet de l'étude}
+
 Quels sont les buts et intérêts de ce projet. Qu’est-ce que cela peut vousapporter en groupe ou individuellement ?
 
 \subsection{État de l'art}
+
 Quel est le premier logiciel/jeu de ce type ? Quels sont les principaux autreslogiciels/jeux de ce type existants (vous en citerez au minimum trois) ? Quels sont leurs points forts ? Quelles sont leurs fonctionnalités propres ?
 
 \subsection{Découpage du projet}
-Qui, dans l’équipe qui réalisera ce projet fera quoi ? Partage des tâches,mais aussi découpage du projet en différentes parties si cela s’avère nécessaire. Par exemplepour un logiciel type Blender, il y aurait l’éditeur 2D, l’éditeur 3D, le gestionnaire de matériel,l’animateur, etc... \newline
--> 1er Rogue Like \newline
--> Isaac, FTL, ETG, Hadès
+
+Qui, dans l’équipe qui réalisera ce projet fera quoi ? Partage des tâches,mais aussi découpage du projet en différentes parties si cela s’avère nécessaire. Par exemple pour un logiciel type Blender, il y aurait l’éditeur 2D, l’éditeur 3D, le gestionnaire de matériel,l’animateur, etc... \\
+$\rightarrow$ 1er Rogue Like \\
+$\rightarrow$ Isaac, FTL, ETG, Hadès
 
 \pagebreak
 
@@ -90,14 +121,24 @@ Qui, dans l’équipe qui réalisera ce projet fera quoi ? Partage des tâches,m
 
 
 \subsubsection{Logiciels et matériel utilisé}
+
+...
+
 \subsubsection{Le réseau}
-Le jeu étant voué à être multijoueur, même si un mode solo sera disponible, il y aura deux entités séparées :
+
+Le jeu étant voué à être multijoueur, même si un mode solo sera disponible, il y aura deux entités séparées:
+
 \begin{itemize}
-    \item Le client :  Il sera chargé d'afficher le monde et interpréter les actions du joueur sur l'ordinateur. Il sert donc d'interface entre le serveur et le joueur.
-    \item Le serveur : Il sera chargé de générer le monde, sauvegarder les parties des joueurs, interconnecter les joueurs lors des sessions multijoueurs et c'est lui qui va gérer la logique et le fonctionnement du jeu.
+    \item Le client:  Il sera chargé d'afficher le monde et interpréter les actions du joueur sur l'ordinateur. Il sert donc d'interface entre le serveur et le joueur.
+    
+    \item Le serveur: Il sera chargé de générer le monde, sauvegarder les parties des joueurs, interconnecter les joueurs lors des sessions multijoueurs et c'est lui qui va gérer la logique et le fonctionnement du jeu.
 \end{itemize}
+
 Lors des sessions solo, un serveur local est lancé sur l'ordinateur du joueur afin de garder la même base de code entre le mode solo et le modo multijoueur. \\
-Ces deux entités communiquent entre elles en réseau,  et s'échangent des données en continu pendant toute la partie.
+Ces deux entités communiquent entre elles en réseau, et s'échangent des données en continu pendant toute la partie.
+
 \subsubsection{L'intelligence artificielle}
--
+
+...
+
 \end{document}
