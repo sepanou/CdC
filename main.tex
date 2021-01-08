@@ -1,0 +1,100 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{caption}
+
+\title{
+\textbf{\begin{center}\Huge Cahier des charges \end{center}}
+\textrm{ \underline{Groupe} : Sépanou}}
+\author{LO Jean-Pierre | MICHALON Loïc\and MICHOT Maxence | TCHEKACHEV David}
+\date{Janvier 2021}
+
+\begin{document}
+
+\maketitle
+
+\pagebreak
+
+\renewcommand*\contentsname{\textbf{\Huge Sommaire \newline}}
+\large \tableofcontents
+
+\pagebreak
+
+\section{Introduction}
+\lipsum[7-9]
+
+\pagebreak
+
+\section{Le groupe et ses membres}
+\subsection{Le groupe}
+\lipsum[4-5]
+
+\subsection{Les membres}
+\subsubsection{LO Jean-Pierre}
+\lipsum[3]
+\subsubsection{MICHALON Loïc}
+\lipsum[3]
+\subsubsection{MICHOT Maxence}
+\lipsum[3]
+\subsubsection{TCHEKACHEV David}
+\lipsum[2]
+\pagebreak
+
+\section{Le projet}
+\subsection{Origine et nature du projet}
+D’où vient l’idée de ce projet, de quelle nature est il ? Jeu, Uti-litaire, Traitement d’images, etc...
+\subsubsection{Idée initiale}
+\subsubsection{Nature du jeu}
+
+\subsection{Objet de l'étude}
+Quels sont les buts et intérêts de ce projet. Qu’est-ce que cela peut vousapporter en groupe ou individuellement ?
+
+\subsection{État de l'art}
+Quel est le premier logiciel/jeu de ce type ? Quels sont les principaux autreslogiciels/jeux de ce type existants (vous en citerez au minimum trois) ? Quels sont leurs points forts ? Quelles sont leurs fonctionnalités propres ?
+
+\subsection{Découpage du projet}
+Qui, dans l’équipe qui réalisera ce projet fera quoi ? Partage des tâches,mais aussi découpage du projet en différentes parties si cela s’avère nécessaire. Par exemplepour un logiciel type Blender, il y aurait l’éditeur 2D, l’éditeur 3D, le gestionnaire de matériel,l’animateur, etc... \newline
+-> 1er Rogue Like \newline
+-> Isaac, FTL, ETG, Hadès
+
+\pagebreak
+\subsubsection{Répartition des tâches}
+
+\begin{table}
+    \centering
+    \caption*{Répartition des tâches par personne}
+    \begin{tabular}{ |c|c|c|c|c| } % '|' --> add borders
+        \hline
+        Tâches & Jean-Pierre & Loïc & Maxence & David \\
+        \hline
+        Progammation du jeu & x & x & x & x \\
+        \hline
+        Réseau & x & x & x & x \\
+        \hline
+        Site Web & x & x & x & x \\
+        \hline
+        Intelligence artificielle & x & x & x & x \\
+        \hline
+        Graphismes \& musiques & x & x & x & x \\
+        \hline
+    \end{tabular}
+    \caption*{
+        \\ $\otimes$ : Responsable
+        \\ $\times$ : Suppléant
+    }
+    \label{table:repartition}
+\end{table}
+
+
+\subsubsection{Logiciels et matériel utilisé}
+\subsubsection{Le réseau}
+Le jeu étant voué à être multijoueur, même si un mode solo sera disponible, il y aura deux entités séparées :
+\begin{itemize}
+    \item Le client :  Il sera chargé d'afficher le monde et interpréter les actions du joueur sur l'ordinateur. Il sert donc d'interface entre le serveur et le joueur.
+    \item Le serveur : Il sera chargé de générer le monde, sauvegarder les parties des joueurs, interconnecter les joueurs lors des sessions multijoueurs et c'est lui qui va gérer la logique et le fonctionnement du jeu.
+\end{itemize}
+Lors des sessions solo, un serveur local est lancé sur l'ordinateur du joueur afin de garder la même base de code entre le mode solo et le modo multijoueur. \\
+Ces deux entités communiquent entre elles en réseau,  et s'échangent des données en continu pendant toute la partie.
+\subsubsection{L'intelligence artificielle}
+-
+\end{document}
