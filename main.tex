@@ -1,11 +1,17 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
 \usepackage{caption}
-\usepackage{xcolor}
+\usepackage[official]{eurosym}
+\usepackage{hyperref}
+%\usepackage{xcolor}
+
+%\definecolor{dark_grey}{RGB}{24, 26, 27}
+%\pagecolor{dark_grey}
+%\color{white}
 
 \title{
     \textbf{ \begin{center} \Huge Cahier des charges \end{center} }
-    \textrm{ \underline{Groupe:} Sépanou }
+    \textrm{ \underline{Groupe :} Sépanou }
 }
 
 \author{
@@ -14,10 +20,6 @@
 }
 
 \date{Janvier 2021}
-
-\definecolor{dark_grey}{RGB}{24, 26, 27}
-\pagecolor{dark_grey}
-\color{white}
 
 \begin{document}
 
@@ -32,7 +34,21 @@
 \normalsize
 \section{Introduction}
 
-...
+%Posséder une introduction (1 page minimum) qui résume les points essentiels du cahier des charges afin de donner une vue d’ensemble au jury. Elle doit faire ressortir l’intérêt du projet et mettre en valeur le but final.
+
+Ce cahier des charges vise à présenter les membres de notre groupe (\textbf{Sépanou}), à introduire les aspects du jeu vidéo que nous allons développer dans le cadre du projet de S2 et à fournir des prédictions quant à l'avancement du projet au fil du temps. \\
+\\
+Nous nous sommes donc mis d'accord pour nous orienter vers un jeu vidéo inspiré du rogue-like mais dont le nom reste encore à définir. \\
+À des fins logistiques, nous avons tenté au mieux de diviser le projet en plusieurs parties et de nous les répartir le plus équitablement possible, en tenant compte des souhaits de chacun. \\
+D'autre part, tout au long de ce cahier des charges sont évoqués les aspects fonctionnel, technologique, méthodologique et opérationnel du projet nécessaires pour le mener à bien et dans les temps. \\
+\\
+L'idée de création d'un jeu vidéo a séduit au sein de notre groupe dans la mesure où cette expérience pourrait s'avérer unique dans notre vie. \\
+En effet, il est peu probable qu'à l'avenir, compte tenu de nos perspectives professionnelles, nous soyons amenés à travailler sur un jeu vidéo. \\
+Cette expérience sera donc enrichissante pour tous et nous forcera à nous intéresser à des domaines qui, sans ce projet, nous auraient probablement laissés indifférents. \\
+Ainsi le choix d'un jeu vidéo enrichira-t-il nos compétences, tout en nous en apportant de nouvelles. \\
+\\
+En somme, le but final de ce projet est la réalisation d'un jeu de type rogue-like au sein duquel nous espérons réussir à intégrer une diversité certaine en alliant combat, exploration et cohérence des niveaux en vue de garantir sa rejouabilité. \\
+Néanmoins, pour le moment, nous n'avons pas scellé l'histoire du jeu bien que l'idée des concepts à y intégrer nous soit claire.
 
 \pagebreak
 
@@ -40,13 +56,15 @@
 
 \subsection{Le groupe}
 
-...
+Le groupe fut formé au jour fondateur du douzième jour du mois de décembre de l'année 2020. Ses prémices datant du dix-neuvième jour de Novembre de l'année 2020 de par ses 3 premiers membres. Au début, nous hésitions entre plusieurs projets assez originaux (comprenez que c'était des logiciels et non des jeux vidéos) tel que créer notre propre langage informatique, un logiciel de chat crypté ou bien un jeu basé sur des fractales en 3D. Finalement, nous avons fait un choix qui convient aux goûts de tout le monde : un jeu vidéo. Ainsi, nous avons listé nos jeux favoris et avons conclu que ce genre serait parfaitement adapté à nos centres d'intérêts personnels.\\
+Ainsi, c'est au jour mémorable du dix-septième jour du mois de Décembre de l'an de grâce 2020 que notre groupe s'est scellé avec l'envoi du formulaire et le choix du nom du groupe : \textbf{Sépanou}.\\
+Nous regardons donc tous avec intérêt vers la continuation de ce projet et, si possible, sa réussite pour notre S2.
 
 \subsection{Les membres}
 
 \subsubsection{LO Jean-Pierre}
 
-J'ai commencé à m'intéresser à l'informatique au début de mon année de 4ème marquée par l'achat de mon premier ordinateur.\\
+J'ai commencé à m'intéresser à l'informatique au début de mon année de 4ème marquée par l'achat de mon premier ordinateur. \\
 Auparavant, j'ai eu l'occasion de jouer à divers jeux sur DS puis sur PC (Minecraft bien sûr) qui, finalement, ont éveillé en moi cet intérêt pour l'informatique et plus précisément pour la programmation.
 Ainsi ai-je pu m'essayer à divers langages tels que Java, Python ou le C, qui m'ont permis de découvrir la plupart des paradigmes de programmation. J'ai également eu l'occasion de m'intéresser au web dans le cadre de petits projets d'ICN ou d'ISN. \\
 Néanmoins, je n'ai jamais réellement approfondi un langage en particulier... \\
@@ -67,41 +85,49 @@ Ce projet est pour moi l'opportunité de me plonger plus en profondeur dans la p
 
 \subsubsection{TCHEKACHEV David}
 
-J'ai eu la chance d'être plongé dans l'informatique dès le plus jeune âge, tout d'abord avec un ordinateur familial, puis grâce à une association qui enseigne l'informatique aux enfants à Paris.\\
+J'ai eu la chance d'être plongé dans l'informatique dès le plus jeune âge, tout d'abord avec un ordinateur familial, puis grâce à une association qui enseigne l'informatique aux enfants à Paris. \\
 Depuis, je programme tout ce qui me passe par l'esprit, souvent pour moi ou mes amis. Je suis resté longtemps dans l'univers Minecraft à programmer des modules pour enrichir le jeu (plugins). Mais après plusieurs années, je m'en suis lassé et j'ai quitté cet univers. \\
 Je me suis ensuite lancé dans la création de bots pour automatiser certaines tâches de la vie, ainsi que des sites web pour gérer certains systèmes de façon informatique. Mes derniers sites servent à gérer des tournois sportifs ainsi qu'un site qui gère les voeux d'orientation de lycéens.
-Pour le projet de S2, je suis curieux de découvrir le monde du jeu vidéo au plus bas niveau, là où il est créé et imaginé. \\
+Pour le projet de S2, je suis curieux de découvrir le monde du jeu vidéo au plus bas niveau, là où il est créé et imaginé.  \\
 Je pense que la diversité de notre groupe nous permet d'avoir un équilibre afin de puiser dans les compétences de chacun afin de réaliser un projet bien réparti.
-
-\pagebreak
 
 \section{Le projet}
 
 \subsection{Origine et nature du projet}
 
-D’où vient l’idée de ce projet, de quelle nature est il ? Jeu, Utilitaire, Traitement d’images, etc...
+% D’où vient l’idée de ce projet, de quelle nature est il ? Jeu, Utilitaire, Traitement d’images, etc...
 
 \subsubsection{Idée initiale}
 
-...
+Aux prémices de la formation de notre groupe, nous devions choisir une idée de projet, jeu ou autre, qui satisferait les envies de tous. \\
+Nous avons donc décidé de lister nos jeux préférés afin de sélectionner les types de jeux qui nous étaient communs et qui correspondraient le plus à notre groupe. \\
+Ainsi avons-nous relevé les caractéristiques suivantes pour notre jeu "idéal" : exploration, RPG, survie, et inspiré du rogue-like. \\
+Cette idée convenant à tous, notre idée de projet du S2 fut dès lors un jeu vidéo marqué par le traditionnel genre du rogue-like.
 
 \subsubsection{Nature du jeu}
 
-...
+Il s'agira donc d'un jeu fortement inspiré du rogue-like.
+Par conséquent, la mort y sera définitive dans le sens où elle réinitialisera la progression du joueur. \\
+À défaut d'avoir une idée entièrement définie, nous planifions de nous orienter vers un schéma plutôt classique du rogue-like malgré l'aspect multijoueur assez inusuel au genre. \\
+C'est-à-dire que le joueur évoluera dans un monde composé de divers niveaux à thèmes différents indiquant une progression vers l'objectif à génération procédurale où l'exploration aura une place importante en vue d'inciter le joueur à explorer son environnement. Cet environnement inclura divers PNJs (= Personnages Non Joueurs), utiles notamment pour délivrer l'histoire du jeu au joueur. Quant à la direction artistique, nous nous dirigerons vers un univers Medieval Fantasy en pixel art. \\
+De plus, en début de partie, le joueur sera téléporté dans un Hub (= Salon) prédéfini dans lequel il pourra choisir parmi plusieurs classes non définitives telles que Mage, Guerrier, Archer, Voleur ou encore Paladin - avant de pénétrer dans les salles du donjon.
+
 
 \subsection{Objet de l'étude}
 
-Quels sont les buts et intérêts de ce projet. Qu’est-ce que cela peut vous apporter en groupe ou individuellement ?
+Les buts et intérêts de ce projet en tant que groupe est de découvrir l'univers de la création de jeux vidéo sous Unity et en multijoueur avec toutes ses problématiques et particularités. Ainsi nous allons pouvoir découvrir en détail les aspects du genre rogue-like ainsi que les aspects du travail en groupe en utilisant les plateformes adaptées tel que \textit{GitHub} pour pouvoir mettre le travail en commun assez facilement. Ainsi cela va nous apprendre les bases de la cohésion de groupe lors du travail sur des projets informatiques ce qui semble essentiel quand à la suite de nos études en tant qu'ingénieur devant diriger une équipe.\\
+Sur le plan personnel, ce projet va nous permettre d'apprendre à connaître les autres surtout en situation de travail. Cela nous permet également de nous familiariser à devoir rendre des projets et documents avant une certaine date donnée et à nous organiser en conséquence de causes afin de pouvoir finir à temps sans devoir hâter le travail. Ainsi on peut voir l'intérêt de s'organiser à l'avance pour éviter des échéances désastreuses ou autres projets non fini comme le cas d'école récent du studio polonais \textit{Projekt Red} avec le jeu \textit{Cyberpunk 2077}.
+%Quels sont les buts et intérêts de ce projet. Qu’est-ce que cela peut vous apporter en groupe ou individuellement ?
 
 \subsection{État de l'art}
 
-L'un des premiers jeux de ce type est le jeu \textit{Rogue} sorti en 1980 qui est un sous-genre du Jeu de Rôle (JDR ou RPG en anglais) qui fut le pionnier de ce sous-genre. Il consiste en un jeu où il faut explorer un donjon généré de façon procédurale en tuant des ennemis pour gagner de l'expérience et de l'équipement, toute mort étant définitive. Ainsi, les jeux rogue-like sont surtout caractérisés par des niveaux fermés, générés procéduralement à chaque nouvelle partie, et dont le but est d'atteindre la fin sans mourir ; chaque mort nous faisant recommencer une partie du début. Cependant, aujourd'hui une très grande majorité des rogue-like a introduit un système de progression entre chaque partie comme des nouveaux objets à débloquer, des raccourcis vers les niveaux suivants, ou encore des boss entre chaque niveau.\\
+L'un des premiers jeux de ce type est le jeu \textit{Rogue} sorti en 1980 qui est un sous-genre du RPG inspiré des jeux de rôles (JDR) papier qui fut le pionnier de ce sous-genre. Il consiste en un jeu où il faut explorer un donjon généré de façon procédurale en tuant des ennemis pour gagner de l'expérience et de l'équipement, toute mort étant définitive. Ainsi, les jeux rogue-like sont surtout caractérisés par des niveaux fermés, générés procéduralement à chaque nouvelle partie, et dont le but est d'atteindre la fin sans mourir ; chaque mort nous faisant recommencer une partie du début. Cependant, aujourd'hui une très grande majorité des rogue-like a introduit un système de progression entre chaque partie comme des nouveaux objets à débloquer, des raccourcis vers les niveaux suivants, ou encore des boss entre chaque niveau. \\
 \\
-Ainsi, le genre du rogue-like existe encore aujourd'hui et n'est pas en perte de vitesse. Un des plus récents et célèbres rogue-like est \textit{The Binding of Isaac} ainsi que ses suites ou extensions qui correspondent au genre du rogue-like ; le but étant d'aller au bout des niveaux générés procéduralement en ramassant des équipements différents à chaque partie.\\
-Un autre rogue-like connu est le jeu vidéo \textit{Enter the Gungeon} qui correspond au genre du rogue-like dont le but est de vaincre le \textit{Dragun}, gardien du \textit{Gungeon}. Contrairement aux autres jeux rogue-like, ce jeu est également un bullet-hell (genre caractérisant des jeux où il y a énormément de projectiles ennemis à éviter sur l'écran) car il repose sur l'univers des armes à feu et, contrairement aux autres rogue-like, le joueur et les ennemis attaquent à distance.\\
-Enfin, le genre du rogue-like est toujours d'actualité avec la sortie en Septembre 2020 du jeu \textit{Hades} salué par la critique et nominé aux \textit{Steam Awards} de 2020. Dans ce jeu, on incarne le fils d'Hadès qu'on peut améliorer de partie en partie grâce aux ressources récoltées lors de chacune d'elles. On peut également jouer des armes différentes selon nos goûts et l'on se fait aider par les dieux de l'Olympe afin de réussir à terminer le jeu.\\
-\\
-Ainsi, le genre du rogue-like est caractérisé surtout par sa rejouabilité quasi-infinie due à sa génération procédurale et son genre très enclin à intégrer de très nombreux secrets dans le jeu pour atteindre le 100\%. Les grands aspects du rogue étant donc :\\
+Ainsi, le genre du rogue-like existe encore aujourd'hui et n'est pas en perte de vitesse. Un des plus récents et célèbres rogue-like est \textit{The Binding of Isaac} ainsi que ses suites ou extensions qui correspondent au genre du rogue-like ; le but étant d'aller au bout des niveaux générés procéduralement en ramassant des équipements différents à chaque partie. \\
+Un autre rogue-like connu est le jeu vidéo \textit{Enter the Gungeon} qui correspond au genre du rogue-like dont le but est de vaincre le \textit{Dragun}, gardien du \textit{Gungeon}. Contrairement aux autres jeux rogue-like, ce jeu est également un bullet-hell (genre caractérisant des jeux où il y a énormément de projectiles ennemis à éviter sur l'écran) car il repose sur l'univers des armes à feu et, contrairement aux autres rogue-like, le joueur et les ennemis attaquent à distance. \\
+Enfin, le genre du rogue-like est toujours d'actualité avec la sortie en Septembre 2020 du jeu \textit{Hades} salué par la critique et nommé aux \textit{Steam Awards} de 2020. Dans ce jeu, on incarne le fils d'Hadès qu'on peut améliorer de partie en partie grâce aux ressources récoltées lors de chacune d'elles. On peut également jouer des armes différentes selon nos goûts et l'on se fait aider par les dieux de l'Olympe afin de réussir à terminer le jeu. \pagebreak
+
+Ainsi, le genre du rogue-like est caractérisé surtout par sa rejouabilité quasi-infinie due à sa génération procédurale et son genre très enclin à intégrer de très nombreux secrets dans le jeu pour atteindre le 100\%. Les grands aspects du rogue étant donc :
 \begin{itemize}
     \item Une génération procédurale des niveaux
     \item De nombreux ennemis variés
@@ -109,35 +135,42 @@ Ainsi, le genre du rogue-like est caractérisé surtout par sa rejouabilité qua
     \item De nombreux secrets
     \item Une grande durée de vie
 \end{itemize}
-
 %Quel est le premier logiciel/jeu de ce type ? Quels sont les principaux autres logiciels/jeux de ce type existants (vous en citerez au minimum trois) ? Quels sont leurs points forts ? Quelles sont leurs fonctionnalités propres ?
 
 \subsection{Découpage du projet}
 
-Qui, dans l’équipe qui réalisera ce projet fera quoi ? Partage des tâches,mais aussi découpage du projet en différentes parties si cela s’avère nécessaire. Par exemple pour un logiciel type Blender, il y aurait l’éditeur 2D, l’éditeur 3D, le gestionnaire de matériel,l’animateur, etc... \\
-$\rightarrow$ $1^{er}$ Rogue Like $\rightarrow$ Rogue, 1980 \\
-$\rightarrow$ Isaac, FTL, ETG, Hadès
-
-\pagebreak
+%Qui, dans l’équipe qui réalisera ce projet fera quoi ? Partage des tâches,mais aussi découpage du projet en différentes parties si cela s’avère nécessaire. Par exemple pour un logiciel type Blender, il y aurait l’éditeur 2D, l’éditeur 3D, le gestionnaire de matériel,l’animateur, etc... \\
+%$\rightarrow$ $1^{er}$ Rogue Like $\rightarrow$ Rogue, 1980 \\
+%$\rightarrow$ Isaac, FTL, ETG, Hadès
 
 \subsubsection{Répartition des tâches}
+
+Nous avons décidé de séparer les tâches du jeu en 6 catégories : La programmation du jeu, l'IA, l'architecture des niveaux, les graphismes \& musiques, le réseau pour le multijoueur et le site Internet.
+Ces 6 catégories sont séparées en 2 parties :
+
+\begin{itemize}
+    \item Catégories de bas niveau : Programmation du jeu, IA et réseau
+    \item Catégories de haut niveau : Architecture des niveaux, graphismes \& musiques et le site Internet.
+\end{itemize}
+
+Ainsi, nous avons réparti les catégories afin que chacun soit responsable sur une catégorie dite de "bas-niveau" et une de "haut-niveau", les suppléances se faisant de la même façon. De plus, la catégorie programmation du jeu a 2 responsables celle-ci étant plutôt massive. \\
 
 \begin{table}[h!]
     \centering
     \caption*{Répartition des tâches par personne}
-    \begin{tabular}{ |c|c|c|c|c| }
+    \begin{tabular}{|c|c|c|c|c|}
         \hline
         Tâches & Jean-Pierre & Loïc & Maxence & David \\
         \hline
-        Progammation du jeu & - & - & - & - \\
+        Programmation du jeu & $\otimes$ & $\otimes$ & $\times$ & - \\
         \hline
-        Intelligence artificielle & - & - & - & - \\
+        Intelligence artificielle & - & $\times$ & $\otimes$ & - \\
         \hline
-        Architecture des niveaux & - & - & - & - \\
+        Architecture des niveaux & $\times$ & $\otimes$ & $\times$ & - \\
         \hline
-        Graphismes \& musiques & - & - & - & - \\
+        Graphismes \& musiques & $\otimes$ & - & - & $\times$ \\
         \hline
-        Réseau & - & - & - & - \\
+        Réseau & - & - & $\times$ & $\otimes$ \\
         \hline
         Site Internet & - & - & $\times$ & $\otimes$ \\
         \hline
@@ -149,18 +182,43 @@ $\rightarrow$ Isaac, FTL, ETG, Hadès
     \label{table:repartition}
 \end{table}
 
-\subsubsection{Logiciels et matériel utilisé}
+\pagebreak
 
-...
+\subsubsection{Logiciels et matériel utilisés}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        Rôle & Logiciels \& Sites webs & Prix \\
+        \hline
+        Moteur de jeu & Unity 2020 & 0 \euro{} (licence étudiant) \\
+        \hline
+        IDE & Jetbrains Rider & 0 \euro{} (licence étudiant) \\
+        \hline
+        Hébergement code \& web & GitHub & 0 \euro{} \\
+        \hline
+        Versioning & Git & 0 \euro{} \\
+        \hline
+        Éditeur de LaTeX & Overleaf & 0 \euro{} \\
+        \hline
+        Éditeur d'image & GIMP / paint.net & 0 \euro{} \\
+        \hline
+        Editeur de son \& musique & Audacity \& FL Studio & 0 \euro{} \\
+        \hline
+    \end{tabular}
+    \caption*{Logiciels utilisés}
+    \label{tab:logiciels}
+\end{table}
 
 \subsubsection{Le réseau}
 
-Le jeu étant voué à être multijoueur, même si un mode solo sera disponible, il y aura deux entités séparées:
+Le jeu étant voué à être multijoueur, même si un mode solo sera disponible, il y aura deux entités séparées :
 
 \begin{itemize}
-    \item Le client:  Il sera chargé d'afficher le monde et interpréter les actions du joueur sur l'ordinateur. Il sert donc d'interface entre le serveur et le joueur.
+    \item Le client :  Il sera chargé d'afficher le monde et interpréter les actions du joueur sur l'ordinateur avant de les envoyer vers le serveur. Il sert donc d'interface entre le serveur et le joueur.
     
-    \item Le serveur: Il sera chargé de générer le monde, sauvegarder les parties des joueurs, interconnecter les joueurs lors des sessions multijoueurs et c'est lui qui va gérer la logique et le fonctionnement du jeu.
+    \item Le serveur : Il sera chargé de générer le monde, sauvegarder les parties des joueurs, interconnecter les joueurs lors des sessions multijoueur et c'est lui qui va gérer la logique et le fonctionnement du jeu.
 \end{itemize}
 
 Lors des sessions solo, un serveur local est lancé sur l'ordinateur du joueur afin de garder la même base de code entre le mode solo et le mode multijoueur. \\
@@ -168,6 +226,126 @@ Ces deux entités communiquent entre elles en réseau, et s'échangent des donn�
 
 \subsubsection{L'intelligence artificielle}
 
-...
+Les rogue-like étant par nature des jeux en JVE (joueur(s) contre ennemies), il nous faut développer des comportements pour les ennemis et éventuels alliés du joueur. Il nous faut par exemple programmer des algorithmes de pathfinding ou encore des motifs de déplacement et d'attaque des ennemis. \\
+En effet, chaque ennemi aura des comportements différents selon la présence du ou des joueurs et de la situation actuelle. Certains comportements pouvant être réadaptés au besoin d'autres ennemis dans des niveaux avec des thèmes différents. De plus, les boss auront leur propre IA unique à leur environnement et spécificités.
+
+\subsubsection{Génération des niveaux}
+
+Il faut générer des niveaux différents à chaque partie mais néanmoins garder un sentiment de cohérence. Pour cela, nous utiliserons la technique de la génération procédurale similairement au jeu \textit{The Binding of Isaac}. Nous générerons des salles avec des ennemis et des obstacles que nous aurons juste à coller les unes aux autres par la suite.
+
+\subsection{Structure}
+
+\subsubsection{Fonctionnel}
+
+Éléments planifiés pour le jeu pour l'instant :
+\begin{itemize}
+    \item Déplacements libre en 2D vu du dessus (haut, bas, gauche et droite).
+    \item Système de classes mage/guerrier/voleur/etc...
+    \begin{itemize}
+        \item Sorts pour le mage avec un système de mana.
+        \item Armes pour le guerrier.
+        \item Discrétion, vol et dextérité pour le voleur.
+        \item Arcs et arbalètes pour l'archer.
+        \item Prodiges \& miracles pour le paladin.
+    \end{itemize}
+    \item Génération procédurale des niveaux avec des thèmes différents.
+    \item Mode multijoueur et solo.
+    \item Ennemis variés selon le thème du niveau avec leurs propres comportements.
+    \item Système de carnet d'adresses pour le mode multijoueur.
+    \item Système de mise à jour avec un launcher, voire un espace communautaire sur ce même launcher.
+    \item Une histoire assez sommaire.
+    \item Système de niveau, de compétences et d'expérience.
+    \item Jouable à la manette et au clavier.
+    \item Tirer parti du multi-threading.
+    \item Compatible Windows et Linux.
+    \item Présence de PNJs.
+    \item Système d'argent pour acheter de l'équipement.
+    \item Des équipements en fonction des classes.
+    \item Un hub avant chaque partie.
+\end{itemize}
+
+\pagebreak
+
+\subsubsection{Technologique}
+
+%Pk Unity, pk les serveurs etc
+%parce que c+ simplen, pour pas tour refaire depuis le début, parce que le multi c b1
+
+\textit{Unity} est un moteur de jeu, il permet de développer sans se préoccuper des obstacles qu'amène la programmation de jeux plus bas niveau avec des librairies comme la \textit{SDL} ou la \textit{SFML} par exemple. On engrange ainsi un gain de temps monumental, cela nous permet de nous concentrer sur la jouabilité ou encore la génération de niveaux au lieu d'être bloqué sur l'animation et autres trivialités qu'\textit{Unity} gère pour nous. \\
+
+Comme conseillé dans le fil rouge fourni par l'école, nous allons séparer le client du serveur afin de pouvoir intégrer le mode multijoueur facilement. Le but étant d'avoir qu'une seule base code unique pour le client et le serveur quel que soit le mode de jeu choisi par le joueur. Aussi, cela nous permet de pouvoir séparer les deux programmes afin que deux personnes puissent travailler plus facilement en parallèle.
+
+\subsubsection{Méthodologique}
+
+%Comment on va bosser ensembles ? Via quoi ? (づ￣ 3￣)づ
+%git, Github, discord, trello, overleaf
+
+Pour la communication écrite comme vocale nous sommes passés sur le logiciel \textit{Discord} via la création d'un serveur privé dédié à la réalisation du projet de S2. Nous avons choisi ce logiciel car nous sommes tous plutôt présents et actifs dessus, de plus cela nous empêche de multiplier les différents sites et logiciels de discussion puisque que nous l'utilisions déjà au préalable. \\
+
+En vue de centraliser et faciliter la création du cahier des charges et des rapports à venir, nous utilisons et utiliserons \textit{Overleaf} qui permet de créer des documents au format PDF en \LaTeX \ en simultané. \\
+
+Afin de pouvoir planifier nos tâches diverses sur le projet tel que la réalisation des documents à rendre, les soutenances à prévoir et les fonctionnalités à implémenter à temps. Nous allons utiliser le site web \textit{Trello} qui nous permet de faire une \textit{Roadmap} du projet (sorte de carte mentale des tâches à effectuer). Cela a été choisi car c'est un site web gratuit avec beaucoup de fonctionnalités très adaptées à notre utilisation. \\
+
+Afin d'héberger notre projet ainsi que notre site web nous avons décidé d'utiliser la plateforme \textit{GitHub} car celle-ci est plus adaptée que \textit{GitLab} pour les petits projets communautaires comme le nôtre. De plus il nous permet d'héberger notre système de gestion de versions (\textit{Git}) ainsi que notre site Internet.
+
+\pagebreak
+
+\subsubsection{Opérationnel}
+
+%Quelles features seront prêtes pour les soutenances ?
+%idfk
+
+Nous avons décidé de séparer le projet en trois échéances comme convenu qui sont définies selon les soutenances de projet. Ainsi, nous voulions séparer cela de façon à ce que nous ayons le temps de nous familiariser avec \textit{Unity} avant la première soutenance en ayant implémenté des fonctionnalités de base. Ainsi, le plus gros des nouvelles fonctionnalités se fera pour la soutenance intermédiaire du moins dans des états plutôt basiques, puis l'affinage et le déboguage se feront pour la soutenance finale. \\ \\
+
+\noindent \large\textbf{Première soutenance :}
+\normalsize
+\begin{itemize}
+    \item Se familiariser avec \textit{Unity}.
+    \item Système serveur / client mis en place.
+    \item Première présence du Hub.
+    \item Déplacements basiques au clavier et à la manette.
+    \item Concept \& thème du jeu.
+    \item Attaques de bases (notamment guerrier \& archer).
+    \item Textures de base (16x16, 32x32 ou 64x64).
+    \item Premiers archétypes de niveaux et d'ennemis (croquis et idées possibles).
+\end{itemize}
+
+\ \\ \\
+
+\noindent \large\textbf{Soutenance intermédiaire :}
+\normalsize
+\begin{itemize}
+    \item Finitions du Hub.
+    \item Génération des niveaux.
+    \item Différentes classes.
+    \item Site web.
+    \item Launcher.
+    \item Niveaux, compétences et expérience.
+    \item Système d'équipement.
+    \item Premiers ennemis génériques.
+    \item Premiers PNJs.
+\end{itemize}
+
+\ \pagebreak
+
+\noindent \large\textbf{Soutenance finale :}
+\normalsize
+\begin{itemize}
+    \item Affinage des différentes fonctionnalités déjà présentes.
+    \item Fin du site Internet.
+    \item Système d'installation et de désinstallation.
+    \item Effets sonores plus poussés.
+    \item Effets et particules.
+\end{itemize}
+
+\ \\ \\
+
+\section{Conclusion}
+
+Pour conclure, ce projet sera donc un jeu vidéo de type rogue-like avec quelques aspects d'exploration. Ce projet va surtout nous permettre d'appréhender le travail en groupe et de réaliser ses différents aspects tout aussi intéressants qu'intriguants. \\ \\
+Ainsi nous espérons avoir correctement réparti nos tâches entre nous ainsi que dans le temps afin de n'avoir aucun imprévu et de finir à temps. \\ \\
+Nous espérons ainsi en apprendre énormément durant tout ce projet de S2 et regardons, une fois de plus, avec intérêt vers l'avenir de notre projet et de ses bénéfices pour nous, notre mentalité et notre groupe ! \\ \\ \\ \\
+
+\centering \textit{Ars longa, vita brevis.}
 
 \end{document}
